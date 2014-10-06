@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tab Info Extension",
+  "description": "This extension shows you information about the tabs that you have open.",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+
+  "browser_action": {
+    "default_icon": "listIcon.png",
+    "default_title": "Tab Information",
+    "default_popup": "popup.html"
+  }
+}
