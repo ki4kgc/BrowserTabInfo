@@ -3,7 +3,7 @@
 
   "name": "Tab Info Extension",
   "description": "This extension shows you information about the tabs that you have open.",
-  "version": "1.0",
+  "version": "1.1",
 
   "permissions": [
     "tabs", "http://*/*"
