@@ -57,7 +57,7 @@ function getTabs(tabs) {
 function moveTabs(windows) {
   var numWindows = windows.length;
   var tabPosition = tabCount;
-  var url = '';
+
 
   output += '<b>You have ' + numWindows + ' windows open</b><br>***********************************<br>';
   for (var i = 0; i < numWindows; i++) {
@@ -68,8 +68,9 @@ function moveTabs(windows) {
 	for (var j = 0; j < numTabs; j++) {
 		var tab = win.tabs[j];
 		var url = tab.url;
+		var title = tab.title;
 		// Move the tab into the window that triggered the browser action.
-		output += ' -> The url of tab ' + j + ' is ' + url + '<br>';
+		output += ' -> The url of tab ' + j +' named ' + title +' is ' + url + '<br>';
 		//chrome.tabs.move(tab.id,{"windowId": targetWindow.id, "index": tabPosition});
 		tabPosition++;
 	}
